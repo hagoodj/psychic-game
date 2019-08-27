@@ -8,6 +8,13 @@ var myLetter = alphabet[Math.floor(Math.random() * 26)];
 
 console.log(myLetter);
 
+
+document.onkeypress = function (guess) {
+    var yourLetter = guess.key ;
+    console.log(yourLetter);
+}
+
+
 document.getElementById("wins").innerHTML = "Wins: " + wins;
 document.getElementById("losses").innerHTML = "Losses: " + losses;
 document.getElementById("guessesRemaining").innerHTML = "Guesses Remaining: " + guessesRemaining;
